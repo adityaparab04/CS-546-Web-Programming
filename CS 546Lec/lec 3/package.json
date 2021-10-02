@@ -1,0 +1,27 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Simple arithmetic operations",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adityaparab04/CS-546-Web-Programming.git"
+  },
+  "keywords": [
+    "arithmetic",
+    "calculations"
+  ],
+  "author": "Aditya Parab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adityaparab04/CS-546-Web-Programming/issues"
+  },
+  "homepage": "https://github.com/adityaparab04/CS-546-Web-Programming#readme",
+  "dependencies": {
+    "prompt": "^1.2.0"
+  }
+}
