@@ -82,6 +82,10 @@ const sameStreet = async function sameStreet(streetName, streetSuffix){
 
 //manipulate ssn
 const manipulateSsn = async function manipulateSsn(){
+
+  if(arguments.length === 1){
+    throw `argument should not be passed`
+  }
   
   let data = await getPeople();
   let newSSN = '';
@@ -122,7 +126,6 @@ const manipulateSsn = async function manipulateSsn(){
     i=i+1;
     
   });
-  // console.log(avg);
   avg=avg/i;
   output.highest=highestSSN;
   output.lowest=lowestSSN;
@@ -130,10 +133,61 @@ const manipulateSsn = async function manipulateSsn(){
   return output;
 }
 
+//sameBirthday(month, day)
+
+const sameBirthday = async function sameBirthday(month, day){
+  let result = [];
+  let i =0;
+  if(typeof month === 'object' || typeof month === 'array'){
+    throw `Input type invalid`
+  }
+  if(typeof day === 'object' || typeof day === 'array'){
+    throw `Input type invalid`
+  }
+  if(typeof month === 'string'){
+    month = parseInt(month);
+    if(typeof month === NaN){
+      throw `Month cannot be parsed into a number`
+    }
+  }
+  if(typeof day === 'string'){
+    day = parseInt(day);
+    if(typeof day !== NaN){
+      throw `Day cannot be parsed into a number`
+    }
+  }
+  if(month>0 && month<13){
+    if(month === 2 && day>28){
+      throw `February cannot have more than 28 days`
+    }
+    else if((month === 4 || month === 6 || month === 9 || month === 11)&& day>30){
+      throw `invalid day`
+    }
+    else{
+      let data = await getPeople();
+      data.forEach(peopleData => {
+        let date = [];
+        date = peopleData.date_of_birth.split("/");
+        // console.log(date);
+        if(parseInt(date[0]) === month && parseInt(date[1]) === day){
+          let userName= peopleData.first_name+" "+peopleData.last_name;
+          result[i]=userName;
+          i=i+1;
+        }
+      });
+    }
+  }
+  else{
+    throw `invalid month`
+  }
+  return result;
+}
+
 
 module.exports = {
     getPeople,
     getPersonById,
     sameStreet,
-    manipulateSsn
+    manipulateSsn,
+    sameBirthday
 }
