@@ -147,10 +147,10 @@ const manipulateSsn = async function manipulateSsn(){
 const sameBirthday = async function sameBirthday(month, day){
   let result = [];
   let i =0;
-  if(typeof month === 'object' || typeof month === 'array'){
+  if(typeof month === 'object' || typeof month === 'array' || typeof month === 'boolean'){
     throw `ERROR!! Input type invalid`
   }
-  if(typeof day === 'object' || typeof day === 'array'){
+  if(typeof day === 'object' || typeof day === 'array' || typeof day === 'boolean'){
     throw `ERROR!! Input type invalid`
   }
   if(typeof month === 'string'){

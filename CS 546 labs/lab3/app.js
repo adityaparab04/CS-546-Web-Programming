@@ -7,72 +7,72 @@ async function main(){
 // !!!!-----people test cases-----!!!!
     //Get person by Id
     
-    try{
-      console.log(await getData.getPersonById('7989fa5e-5617-43f7-a931-46036f9dbcff'));
-    }catch(e){
-        console.error(e);
-    }
+    // try{
+    //   console.log(await getData.getPersonById('7989fa5e-5617-43f7-a931-46036f9dbcff'));
+    // }catch(e){
+    //     console.error(e);
+    // }
     
     
-    //Same Street
+    // //Same Street
     
-    try{
-      console.log(await getData.sameStreet());
-    }catch(e){
-        console.error(e);
-    }
+    // try{
+    //   console.log(await getData.sameStreet());
+    // }catch(e){
+    //     console.error(e);
+    // }
     
     
-    //manipulate ssn    
+    // //manipulate ssn    
 
-    try{
-      console.log(await getData.manipulateSsn({}));
-    }catch(e){
-        console.error(e);
-    }
+    // try{
+    //   console.log(await getData.manipulateSsn({}));
+    // }catch(e){
+    //     console.error(e);
+    // }
 
-    //Get person by date and month
+    // //Get person by date and month
     
     try{
-      console.log(await getData.sameBirthday(9, 25));
+      console.log(await getData.sameBirthday("9", 'ap'));
     }catch(e){
         console.error(e);
     }
     
-    // !!!!-----Stocks test cases-----!!!!
+    // // !!!!-----Stocks test cases-----!!!!
    
-    //get stakeholder data
+    // //get stakeholder data
     
-    try{
-      console.log(await getData2.listShareholders());
-    }catch(e){
-      console.error(e);
-    }
+    // try{
+    //   console.log(await getData2.listShareholders());
+    // }catch(e){
+    //   console.error(e);
+    // }
 
-    //top shareholder
+    // //top shareholder
     
-    try{
-        console.log(await getData2.topShareholder('Aeglea BioTherapeutics, Inc.'));
-      }catch(e){
-        console.error(e);
-    }
+    // try{
+    //     console.log(await getData2.topShareholder('Aeglea BioTherapeutics, Inc.'));
+    //   }catch(e){
+    //     console.error(e);
+    // }
     
 
-    //list stock
+    // //list stock
     
-    try{
-      console.log(await getData2.listStocks("Grenville", 'Pawelke'));
-    }catch(e){
-      console.error(e);
-    }
+    // try{
+    //   console.log(await getData2.listStocks("Grenville", 'Pawelke'));
+    // }catch(e){
+    //   console.error(e);
+    // }
 
-    //get stock by ID
+    // //get stock by ID
     
-    try{
-      console.log(await getData2.getStockById('b','a'));
-    }catch(e){
-      console.error(e);
-    }
+    // try{
+    //   console.log(await getData2.getStockById('b','a'));
+    // }catch(e){
+    //   console.error(e);
+    // }
 
 }
 
