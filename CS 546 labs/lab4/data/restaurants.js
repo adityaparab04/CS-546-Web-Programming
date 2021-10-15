@@ -3,8 +3,8 @@ const restaurants = mongoCollections.restaurants;
 let { ObjectId } = require('mongodb');
 
 //create a newRestaurant object with the given parameters
-const create = async function create(name, location, phoneNumber, website, priceRange, cuisines, overallRating, serviceOptions){    
-    //arguments length check
+const create = async function create(name, location, phoneNumber, website, priceRange, cuisines, overallRating, serviceOptions, type){    
+    // arguments length check
     if (arguments.length !== 8) throw new Error ("Enter all the properties of a restaurant");
 
     //Error handling for name

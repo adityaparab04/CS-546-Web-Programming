@@ -2,8 +2,8 @@ const restaurants = require('./data/restaurants');
 const connection = require('./config/mongoConnection');
 
 async function main(){
-    //create a restaurant and log
-        const test1 = await restaurants.create("Curry On", "Jersey City, New Jersey", "123-768-0870", "https://www.curryOnmyPlate.com", "$$$", ["Indian", "Continental"], 5, {dineIn: true, takeOut: true, delivery: false})
+    // //create a restaurant and log
+        const test1 = await restaurants.create("Robin", "Jersey City, New Jersey", "123-768-0870", "https://www.curryOnmyPlate.com", "$$$", ["Indian", "Continental"], 5, {dineIn: true, takeOut: true, delivery: false})
         const test2 = await restaurants.get(test1._id)
         console.log(test2)
 
