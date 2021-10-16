@@ -5,10 +5,19 @@ const getData2 = require("./stocks");
 async function main(){
 
 // !!!!-----people test cases-----!!!!
-    //Get person by Id
+    
+//get all people
+  try{
+    console.log(await getData.getPeople());
+  }catch(e){
+    console.error(e);
+  }
+
+  
+  //Get person by Id
     
     // try{
-    //   console.log(await getData.getPersonById('7989fa5e-5617-43f7-a931-46036f9dbcff'));
+    //   console.log(await getData.getPersonById('20035a09-3820-4f49-bb8f-d947cebee537'));
     // }catch(e){
     //     console.error(e);
     // }
@@ -33,11 +42,11 @@ async function main(){
 
     // //Get person by date and month
     
-    try{
-      console.log(await getData.sameBirthday("9", 'ap'));
-    }catch(e){
-        console.error(e);
-    }
+    // try{
+    //   console.log(await getData.sameBirthday("9", 'ap'));
+    // }catch(e){
+    //     console.error(e);
+    // }
     
     // // !!!!-----Stocks test cases-----!!!!
    
