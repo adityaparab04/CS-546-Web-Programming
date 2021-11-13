@@ -1,0 +1,14 @@
+<h1>Characters Found</h1>
+<h2>{{searchTerm}}</h2>
+<main>
+{{#each char}}  
+  <article class="search">
+    <ul id="list1">
+      <li>
+        <a href="/characters/{{id}}">{{name}}</a>
+      </li>
+    </ul>
+  </article>
+{{/each}}
+</main>
+

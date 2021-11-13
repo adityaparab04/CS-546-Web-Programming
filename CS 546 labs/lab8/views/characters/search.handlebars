@@ -1,0 +1,14 @@
+<main>
+<div class = "searchCharacter">
+    <h1 class="postName">{{hero.name}}</h1>
+    <img src={{image}} class = "Allimage">
+    <p>{{hero.description}}</p>
+    <h2>Comics</h2>
+    <ul>
+      {{#each hero.comics.items}} 
+      <li>{{name}}</li>
+      {{/each}}
+    </ul>
+</div>
+</main>
+

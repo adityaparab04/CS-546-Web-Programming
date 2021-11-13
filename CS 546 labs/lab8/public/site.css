@@ -1,0 +1,73 @@
+html,
+body {
+	font-size: 12pt;
+}
+
+body {
+    background-color: #EC1D24;
+}
+
+h1.heading {
+    color: black;
+    text-align: center;
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+h2{
+    text-align: center;
+}
+
+p.infoPage {
+    text-align: justify;
+    font-size: 15pt;
+}
+
+input.btn1{
+    font:bold
+}
+
+form.form1 {
+    text-align: center;
+}
+
+div.searchCharacter{
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#list1 li a{
+    font-size: 15px;
+}
+
+div.searchAgain{
+    text-align: center;
+}
+
+input[type=submit] {
+    padding:5px 12px; 
+    background:#ccc; 
+    border:1 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+input[type=text] {
+    padding:5px; 
+    border:5px solid black; 
+    border-radius: 5px;
+}
+
+label{
+    font-size: 15pt;
+}
+
