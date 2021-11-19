@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+header{
+    color: bisque;
+    font-size: xx-large;
+}
+.about {
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+main p{
+    color: aqua;
+}
+footer{
+    bottom: 0;
+    color: rgb(100, 245, 100);
+    font-size: smaller;
+}
+.is-palindrome {
+    color: #0000ff;
+}
+.not-palindrome {
+    color: #ff0000;
+}
+
+.attemptList{
+    text-align: left;
+    padding-left: 27%;
+    list-style-position: inside;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+button:focus {
+  box-shadow: rgba(20, 240, 240, 0.5) 0 2px 5px 0;
+  outline: 5;
+}
