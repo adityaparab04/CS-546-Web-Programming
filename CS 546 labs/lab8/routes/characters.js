@@ -4,7 +4,7 @@ const data = require('../data')
 
 router.get('/', async(req, res) => {
     try{
-        res.render('characters/about', {flag: false});
+        res.render('characters/about', {flag: false, mainTitle: 'Character Finder'});
     }catch(e){
         res.status(404).json("page not found");
     }

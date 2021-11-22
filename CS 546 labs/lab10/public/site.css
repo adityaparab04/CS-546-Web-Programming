@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    color:  white;
+}
+
+header h1{
+    text-align: center;
+    font-size: medium;
+    color: red;
+}
+
+main{
+    padding-top: 10%;
+    text-align: center;
+}
+
+a{
+    color: aqua;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+input[type=password]{
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+footer{
+    padding-top: 10%;
+    bottom: 0;
+    color: greenyellow;
+    font-size: smaller;
+    text-align: center;
+}
