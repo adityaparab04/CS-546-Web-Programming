@@ -1,0 +1,28 @@
+header{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: darkgrey;
+}
+
+#searchForm {
+    text-align: center;
+    padding-top: 20%;
+}
+
+body{
+    background-color: gainsboro;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: gray;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

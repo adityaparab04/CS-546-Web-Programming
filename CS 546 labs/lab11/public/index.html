@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ajax Site</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header> 
+        <h1>TV Time</h1>
+    </header>
+    <form id="searchForm" method="POST">
+        <div class="inputContainer">
+            <label id="term_label" for="search_term">Enter Tv show name:</label>
+            <input type="text" id="search_term" name="search_term"/>
+            <br>
+            <br>
+            <button type="submit" class="search-btn">Search</button>
+        </div>
+    </form>
+    <ul id="showList" hidden></ul>
+    <div id="show" hidden></div>
+    <a href="/" id="homeLink" hidden>Back to All Shows</a>
+    <footer>
+        <div>
+            <p>Name: Aditya Parab</p>
+            <p>Cwid: 10459650</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="/js/ajax-form.js"></script>
+</body>
+</html>

@@ -132,7 +132,7 @@ router.post('/signup', async (req, res) => {
             userInfo.password
         );
         if(newUser.userInserted){
-            res.status(200).redirect('/');
+            res.status(200).render('auth/not_logged_in', {error: "hi this aditya and zaid"});
         }
     }catch (e) {
         if(e ==='Same Username already taken'){
